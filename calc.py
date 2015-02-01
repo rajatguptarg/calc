@@ -24,7 +24,7 @@ def result():
         result = var_1 / var_2
     else:
         result = 'INVALID CHOICE'
-    entry = {'result': result}
+    entry = result
     return render_template('result.html', entry=entry)
 
 if __name__ == '__main__':

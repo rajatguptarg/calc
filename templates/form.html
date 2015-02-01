@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
-	<title>Calculator</title>
-	<head>
+    <head>
+        <title>Calculator</title>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 
@@ -16,7 +15,7 @@
 			<div class="row">
 			<div class="col-md-4"></div>
 			<div class="col-md-4">
-				<form class="form-horizontal" action="http://127.0.0.1:5000/result" method="post">
+				<form class="form-horizontal" action="{{ url_for('result') }}"  method="post">
 					<div class="form-group">
 						<label class="control-label col-xs-3" for="var_1">VARIABLE 1:</label>
 						<div class="col-xs-7">
