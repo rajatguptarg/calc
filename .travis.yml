@@ -6,7 +6,8 @@ python:
 install:
   - pip install flask
   - pip install flake8
-script: nosetests
+script:
+  - flake8 .
 notifications:
   email:
   - rajat.gupta@openlabs.co.in
