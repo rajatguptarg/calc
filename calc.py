@@ -22,6 +22,10 @@ def result():
         result = var_1 * var_2
     elif(operation == 'Division'):
         result = var_1 / var_2
+    elif(operation == 'Modulus'):
+        result = var_1 % var_2
+    elif(operation == 'Power'):
+        result = var_1 ** var_2
     else:
         result = 'INVALID CHOICE'
     entry = result
