@@ -13,6 +13,9 @@ This is minimal flask application of Calculator which performs following Operati
 
 [4] Division (OPERATION: /)
 
+[5] Modulus (OPERATION: %)
+
+[6] Power (OPERATION: **)
 
 **Inside template/**
 
