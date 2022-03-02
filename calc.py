@@ -1,3 +1,4 @@
+import re
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
@@ -14,7 +15,9 @@ def result():
     var_1 = request.form.get("var_1", type=int)
     var_2 = request.form.get("var_2", type=int)
     operation = request.form.get("operation")
-    if(operation == 'Addition'):
+    if(var_2==0 and operation=='Division'):
+        result = 'INVALID CHOICE'
+    elif(operation == 'Addition'):
         result = var_1 + var_2
     elif(operation == 'Subtraction'):
         result = var_1 - var_2
@@ -29,3 +32,4 @@ def result():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
